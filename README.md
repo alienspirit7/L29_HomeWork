@@ -25,8 +25,8 @@ This project explores two different perceptron training methodologies by manuall
 ## 📁 Repository Contents
 
 ### PDF Documentation
-- [Manual Calculation of Weights for Gate And Data Set - Standard Perceptron (Batch size = 1).pdf](file:///Users/alienspirit/Documents/25D/L29_HomeWork/Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Standard%20Perceptron%20(Batch%20size%20=%201).pdf) - Complete spreadsheet calculations for the standard perceptron approach
-- [Manual Calculation of Weights for Gate And Data Set - Batch Gradient Descent (Batch size = 4).pdf](file:///Users/alienspirit/Documents/25D/L29_HomeWork/Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Batch%20Gradient%20Descent%20(Batch%20size%20=%204).pdf) - Complete spreadsheet calculations for the batch gradient descent approach
+- [Standard Perceptron Calculations (Batch size = 1)](Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Standard%20Perceptron%20(Batch%20size%20=%201).pdf) - Complete spreadsheet calculations for the standard perceptron approach
+- [Batch Gradient Descent Calculations (Batch size = 4)](Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Batch%20Gradient%20Descent%20(Batch%20size%20=%204).pdf) - Complete spreadsheet calculations for the batch gradient descent approach
 
 ### Images
 All formula screenshots and decision boundary visualizations are displayed inline in their respective sections below.
@@ -59,10 +59,12 @@ The logical AND gate serves as our training dataset with 4 samples:
 
 The **Standard Perceptron Algorithm** updates weights after processing each individual training example. This is an **online learning** approach.
 
+**Convergence**: The algorithm converged in **6 epochs**.
+
 ### Algorithm Steps
 
-1. **Forward Pass**: For each sample (x₁, x₂, y):
-   - Calculate weighted sum: `z = w₀ + w₁x₁ + w₂x₂`
+1. **Forward Pass**: For each sample (x₀, x₁, x₂, y):
+   - Calculate weighted sum: `z = w₀x₀ + w₁x₁ + w₂x₂`
    - Apply step function: `ŷ = 1 if z ≥ 0, else 0`
 
 2. **Error Calculation**: 
@@ -72,9 +74,14 @@ The **Standard Perceptron Algorithm** updates weights after processing each indi
 
 3. **Weight Update** (performed immediately after each sample):
    ```
-   w₀ = w₀ + η × error × x₀
-   w₁ = w₁ + η × error × x₁
-   w₂ = w₂ + η × error × x₂
+   If error = -1 (predicted too high):
+       wᵢ = wᵢ - xᵢ
+   
+   If error = +1 (predicted too low):
+       wᵢ = wᵢ + xᵢ
+   
+   If error = 0 (correct prediction):
+       wᵢ = wᵢ (no change)
    ```
 
 ### Spreadsheet Implementation
@@ -86,17 +93,15 @@ The spreadsheet tracks:
 
 ### Key Formulas
 
-````carousel
 ![Y Actual (Prediction) Formula](images/batch_1_y_actual_formula.png)
-<!-- slide -->
+
 ![Dot Product (Weighted Sum) Formula](images/batch_1_dot_prod_formula.png)
-<!-- slide -->
+
 ![Decision Cell Formula](images/batch_1_decision_cell_formula.png)
-<!-- slide -->
+
 ![Error Calculation Formula](images/batch_1_Error_formula.png)
-<!-- slide -->
+
 ![Weights Update Formula](images/batch_1_weights_update_formula.png)
-````
 
 ### Results & Decision Boundary
 
@@ -116,6 +121,8 @@ The spreadsheet tracks:
 
 **Batch Gradient Descent** processes all training samples before updating weights. This is a **batch learning** approach that computes the average gradient over the entire dataset.
 
+**Convergence**: The algorithm converged in **25 epochs**.
+
 ### Algorithm Steps
 
 1. **Forward Pass** (for all samples):
@@ -128,12 +135,11 @@ The spreadsheet tracks:
 
 3. **Batch Weight Update** (once per epoch):
    ```
-   w₀ = w₀ - η × Σ(Δᵢ × x₀_i) / N
-   w₁ = w₁ - η × Σ(Δᵢ × x₁_i) / N
-   w₂ = w₂ - η × Σ(Δᵢ × x₂_i) / N
+   w₀ = w₀ - η × Σ(Δᵢ × x₀_i)
+   w₁ = w₁ - η × Σ(Δᵢ × x₁_i)
+   w₂ = w₂ - η × Σ(Δᵢ × x₂_i)
    ```
    Where `Δᵢ = ŷᵢ - yᵢ` (note the negative sign in the update rule)
-   Where N = 4 (batch size)
 
 4. **Error Metric**:
    - Total Error (Sum of Squared Deltas): `Total Error = Σ(Δᵢ)² = Σ(ŷᵢ - yᵢ)²`
@@ -148,19 +154,17 @@ The spreadsheet includes:
 
 ### Key Formulas
 
-````carousel
 ![Y Actual (Batch Predictions) Formula](images/batch_4_y_actual_formula.png)
-<!-- slide -->
+
 ![Delta (Error) Formula](images/batch_4_delta_formula.png)
-<!-- slide -->
+
 ![Delta Squared Formula](images/batch_4_delta_squared_formula.png)
-<!-- slide -->
-![Total Error (MSE) Formula](images/batch_4_total_error_formula.png)
-<!-- slide -->
+
+![Total Error Formula](images/batch_4_total_error_formula.png)
+
 ![Delta for Weights Update Formula](images/batch_4_delta_for_weights_update_formula.png)
-<!-- slide -->
+
 ![Weights Update Formula](images/batch_4_weights_update_formula.png)
-````
 
 ### Results & Decision Boundary
 
@@ -308,8 +312,8 @@ To deepen understanding, consider:
 - [View Live Google Spreadsheet](https://docs.google.com/spreadsheets/d/1BKUrcsTytChlI2XbUrhIfRit84eqW9j-VHDCvOnI0-o/edit?gid=0#gid=0) - Interactive version with all calculations and formulas
 
 ### Spreadsheet Work (PDF Exports)
-- [Standard Perceptron Calculations (PDF)](file:///Users/alienspirit/Documents/25D/L29_HomeWork/Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Standard%20Perceptron%20(Batch%20size%20=%201).pdf)
-- [Batch Gradient Descent Calculations (PDF)](file:///Users/alienspirit/Documents/25D/L29_HomeWork/Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Batch%20Gradient%20Descent%20(Batch%20size%20=%204).pdf)
+- [Standard Perceptron Calculations (PDF)](Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Standard%20Perceptron%20(Batch%20size%20=%201).pdf)
+- [Batch Gradient Descent Calculations (PDF)](Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Batch%20Gradient%20Descent%20(Batch%20size%20=%204).pdf)
 
 ### Visualizations
 All decision boundaries and formula screenshots are available in this repository.
