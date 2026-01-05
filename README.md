@@ -29,25 +29,38 @@ This project explores two different perceptron training methodologies by manuall
 - [Manual Calculation of Weights for Gate And Data Set - Batch Gradient Descent (Batch size = 4).pdf](file:///Users/alienspirit/Documents/25D/L29_HomeWork/Manual%20Calculation%20of%20Weights%20for%20Gate%20And%20Data%20Set%20-%20Batch%20Gradient%20Descent%20(Batch%20size%20=%204).pdf) - Complete spreadsheet calculations for the batch gradient descent approach
 
 ### Decision Boundary Visualizations
-- [Decision Boundary - Standard Perceptron (Batch =1).png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Standard%20Perceptron%20(Batch%20=1).png)
-- [Decision Boundary - Batch Gradient Decent (Batch=4).png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Batch%20Gradient%20Decent%20(Batch=4).png)
+
+![Decision Boundary - Standard Perceptron (Batch =1)](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Standard%20Perceptron%20(Batch%20=1).png)
+
+![Decision Boundary - Batch Gradient Decent (Batch=4)](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Batch%20Gradient%20Decent%20(Batch=4).png)
 
 ### Formula Screenshots
 
 #### Standard Perceptron (Batch = 1)
-- [batch_1_y_actual_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_y_actual_formula.png) - Output prediction formula
-- [batch_1_dot_prod_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_dot_prod_formula.png) - Weighted sum calculation
-- [batch_1_decision_cell_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_decision_cell_formula.png) - Decision function formula
-- [batch_1_Error_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_Error_formula.png) - Error calculation
-- [batch_1_weights_update_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_weights_update_formula.png) - Weight update rule
+
+![Output prediction formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_y_actual_formula.png)
+
+![Weighted sum calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_dot_prod_formula.png)
+
+![Decision function formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_decision_cell_formula.png)
+
+![Error calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_Error_formula.png)
+
+![Weight update rule](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_weights_update_formula.png)
 
 #### Batch Gradient Descent (Batch = 4)
-- [batch_4_y_actual_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_y_actual_formula.png) - Batch output predictions
-- [batch_4_delta_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_formula.png) - Error gradient calculation
-- [batch_4_delta_squared_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_squared_formula.png) - Squared error for loss function
-- [batch_4_total_error_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_total_error_formula.png) - Total batch error (MSE)
-- [batch_4_delta_for_weights_update_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_for_weights_update_formula.png) - Gradient accumulation
-- [batch_4_weights_update_formula.png](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_weights_update_formula.png) - Batch weight update rule
+
+![Batch output predictions](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_y_actual_formula.png)
+
+![Error gradient calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_formula.png)
+
+![Squared error for loss function](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_squared_formula.png)
+
+![Total Error calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_total_error_formula.png)
+
+![Gradient accumulation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_for_weights_update_formula.png)
+
+![Batch weight update rule](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_weights_update_formula.png)
 
 ---
 
