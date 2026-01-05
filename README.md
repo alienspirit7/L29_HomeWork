@@ -30,37 +30,37 @@ This project explores two different perceptron training methodologies by manuall
 
 ### Decision Boundary Visualizations
 
-![Decision Boundary - Standard Perceptron (Batch =1)](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Standard%20Perceptron%20(Batch%20=1).png)
+![Decision Boundary - Standard Perceptron (Batch =1)](images/Decision%20Boundary%20-%20Standard%20Perceptron%20(Batch%20=1).png)
 
-![Decision Boundary - Batch Gradient Decent (Batch=4)](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Batch%20Gradient%20Decent%20(Batch=4).png)
+![Decision Boundary - Batch Gradient Decent (Batch=4)](images/Decision%20Boundary%20-%20Batch%20Gradient%20Decent%20(Batch=4).png)
 
 ### Formula Screenshots
 
 #### Standard Perceptron (Batch = 1)
 
-![Output prediction formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_y_actual_formula.png)
+![Output prediction formula](images/batch_1_y_actual_formula.png)
 
-![Weighted sum calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_dot_prod_formula.png)
+![Weighted sum calculation](images/batch_1_dot_prod_formula.png)
 
-![Decision function formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_decision_cell_formula.png)
+![Decision function formula](images/batch_1_decision_cell_formula.png)
 
-![Error calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_Error_formula.png)
+![Error calculation](images/batch_1_Error_formula.png)
 
-![Weight update rule](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_weights_update_formula.png)
+![Weight update rule](images/batch_1_weights_update_formula.png)
 
 #### Batch Gradient Descent (Batch = 4)
 
-![Batch output predictions](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_y_actual_formula.png)
+![Batch output predictions](images/batch_4_y_actual_formula.png)
 
-![Error gradient calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_formula.png)
+![Error gradient calculation](images/batch_4_delta_formula.png)
 
-![Squared error for loss function](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_squared_formula.png)
+![Squared error for loss function](images/batch_4_delta_squared_formula.png)
 
-![Total Error calculation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_total_error_formula.png)
+![Total Error calculation](images/batch_4_total_error_formula.png)
 
-![Gradient accumulation](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_for_weights_update_formula.png)
+![Gradient accumulation](images/batch_4_delta_for_weights_update_formula.png)
 
-![Batch weight update rule](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_weights_update_formula.png)
+![Batch weight update rule](images/batch_4_weights_update_formula.png)
 
 ---
 
@@ -118,20 +118,20 @@ The spreadsheet tracks:
 ### Key Formulas
 
 ````carousel
-![Y Actual (Prediction) Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_y_actual_formula.png)
+![Y Actual (Prediction) Formula](images/batch_1_y_actual_formula.png)
 <!-- slide -->
-![Dot Product (Weighted Sum) Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_dot_prod_formula.png)
+![Dot Product (Weighted Sum) Formula](images/batch_1_dot_prod_formula.png)
 <!-- slide -->
-![Decision Cell Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_decision_cell_formula.png)
+![Decision Cell Formula](images/batch_1_decision_cell_formula.png)
 <!-- slide -->
-![Error Calculation Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_Error_formula.png)
+![Error Calculation Formula](images/batch_1_Error_formula.png)
 <!-- slide -->
-![Weights Update Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_1_weights_update_formula.png)
+![Weights Update Formula](images/batch_1_weights_update_formula.png)
 ````
 
 ### Results & Decision Boundary
 
-![Decision Boundary - Standard Perceptron](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Standard%20Perceptron%20(Batch%20=1).png)
+![Decision Boundary - Standard Perceptron](images/Decision%20Boundary%20-%20Standard%20Perceptron%20(Batch%20=1).png)
 
 **Characteristics:**
 - ✅ **Rapid updates**: Weights change after every sample
@@ -180,22 +180,22 @@ The spreadsheet includes:
 ### Key Formulas
 
 ````carousel
-![Y Actual (Batch Predictions) Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_y_actual_formula.png)
+![Y Actual (Batch Predictions) Formula](images/batch_4_y_actual_formula.png)
 <!-- slide -->
-![Delta (Error) Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_formula.png)
+![Delta (Error) Formula](images/batch_4_delta_formula.png)
 <!-- slide -->
-![Delta Squared Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_squared_formula.png)
+![Delta Squared Formula](images/batch_4_delta_squared_formula.png)
 <!-- slide -->
-![Total Error (MSE) Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_total_error_formula.png)
+![Total Error (MSE) Formula](images/batch_4_total_error_formula.png)
 <!-- slide -->
-![Delta for Weights Update Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_delta_for_weights_update_formula.png)
+![Delta for Weights Update Formula](images/batch_4_delta_for_weights_update_formula.png)
 <!-- slide -->
-![Weights Update Formula](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/batch_4_weights_update_formula.png)
+![Weights Update Formula](images/batch_4_weights_update_formula.png)
 ````
 
 ### Results & Decision Boundary
 
-![Decision Boundary - Batch Gradient Descent](file:///Users/alienspirit/Documents/25D/L29_HomeWork/images/Decision%20Boundary%20-%20Batch%20Gradient%20Decent%20(Batch=4).png)
+![Decision Boundary - Batch Gradient Descent](images/Decision%20Boundary%20-%20Batch%20Gradient%20Decent%20(Batch=4).png)
 
 **Characteristics:**
 - ✅ **Stable convergence**: Smooth weight trajectory
