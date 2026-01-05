@@ -44,12 +44,7 @@ The logical AND gate serves as our training dataset with 4 samples:
 | 1  | 1  | 0  | 0          |
 | 1  | 1  | 1  | 1          |
 
-**Note**: x₀ is the bias input and is always equal to 1 for all samples.
-
-**Initial Conditions:**
-- Weight vector: **w = [w₀, w₁, w₂] = [0, 0, 0]** (w₀ is the bias weight)
-- Learning rate: **η = 0.1**
-- Activation function: Step function (threshold at 0)
+**Note**: x₀ is the bias input and is always equal to 1 for all samples. Initial weights were assigned randomly.
 
 ---
 
@@ -120,6 +115,8 @@ The spreadsheet tracks:
 ### Methodology
 
 **Batch Gradient Descent** processes all training samples before updating weights. This is a **batch learning** approach that computes the average gradient over the entire dataset.
+
+**Learning Rate**: η = 0.05
 
 **Convergence**: The algorithm converged in **25 epochs**.
 
